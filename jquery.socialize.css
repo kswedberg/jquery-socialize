@@ -1,0 +1,67 @@
+
+/** ===Social Media/Bookmark links
+************************************************************
+************************************************************/
+
+/** ==social-icon class applied to all links by default
+*********************************************/
+.social-icon {
+  background-image: url(images/socialize.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin-right: 4px;
+  text-indent: -1000em;
+  overflow: hidden;
+}
+
+/** ==individual icons for default set of sites
+*********************************************/
+.digg {background-position: 0 -20px;}
+.delicious {background-position: 0 -40px;}
+.dzone {background-position: 0 -60px;}
+.reddit {background-position: 0 -80px;}
+.stumbleupon {background-position: 0 -100px;}
+
+/** ==additional icons, for sites included in $.moreSites
+*********************************************/
+
+/* uncomment the following style rule if you wish to use additional icons */
+.social-icon { background-image: url(images/socialize-all.png); }
+
+.bebo {background-position: 0 -120px;}
+.blinklist {background-position: 0 -140px;}
+.bloglines {background-position: 0 -160px;}
+.blogmarks {background-position: 0 -180px;}
+.facebook {background-position: 0 -200px;}
+.friendfeed {background-position: 0 -220px;}
+.furl {background-position: 0 -240px;}
+.google {background-position: 0 -260px;}
+.magnolia {background-position: 0 -280px;}
+.myspace {background-position: 0 -300px;}
+.newsvine {background-position: 0 -320px;}
+.simpy {background-position: 0 -340px;}
+.slashdot {background-position: 0 -360px;}
+.spurl {background-position: 0 -380px;}
+.squidoo {background-position: 0 -400px;}
+.yahoo {background-position: 0 -420px;}
+
+
+/** ===additional styles for the container div
+************************************************************
+************************************************************/
+
+/* Clearing floats without extra markup
+   Based on http://www.positioniseverything.net/easyclearing.html */
+.group:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.group {display: inline-block;}
+* html .group {zoom: 1;}
+.group {display: block;}

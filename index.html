@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>jQuery Socialize Plugin</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="../jq.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../tabs.css" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="../jquery.tabs.pack.js"></script>
+  <script type="text/javascript" src="../jquery.history.pack.js"></script>
+  <script type="text/javascript" src="../chili-1.8.js"></script>
+
+
+  <script type="text/javascript">
+  $(function() {
+      var main = $('#main').tabs(1);
+  });
+  </script>
+
+
+</head>
+<body>
+  <div><a id="logo" href="http://jquery.com" title="Powered By jQuery"></a></div>
+  <h1 id="banner"><a id="backnav" href="..">&lsaquo;&lsaquo; home</a>jQuery Socialize Plugin</h1>
+  <div id="main">
+    <ul id="nav" class="anchors">
+      <li><a href="#getting-started">Overview</a></li>
+      <li><a href="#options">API / Options</a></li>
+      <li><a href="demo/">Demo</a></li>
+      <li><a href="#download">Download &amp; Support</a></li>
+    </ul>
+    <div id="getting-started" class="tabContent">
+      <h1>Overview</h1>
+      <h1>Quick Start Guide</h1>
+      <div class="step-one">Add HTML markup to your page.</div>
+<pre><code class="mix">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html;charset=utf-8"&gt;
+  &lt;!-- more stuff goes here  --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="social-sites"&gt;
+    Lorem ipsum dolor sit amet.
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      <div class="step-two">Include the <strong>jQuery</strong> core file and the <strong>Socialize</strong> plugin in the <code>&lt;head&gt;</code> of your document. After these scripts are referenced, you can reference a custom script file (preferred) to create the social bookmark links or enter the script directly in the <code>&lt;head&gt;</code> (shown below). You should also include the Socialize <strong>stylesheet</strong> (jquery.socialize.css) before the scripts. 
+      </div>
+      <br />
+<pre><code class="mix">&lt;link rel="stylesheet" href="jquery.socialize.css" type="text/css" /&gt;
+&lt;script src="jquery.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="jquery.socialize.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+$(document).ready(function() {
+  $('#social-buttons').socialize();
+});
+&lt;/script&gt;
+</code></pre>
+      <p>See <a href="#options">API / Options</a> for ways to override the default options.</p>
+    </div>
+    <div id="demo" class="tabContent"></div>
+    <div id="options" class="tabContent">
+      <h1>Socialize Plugin API / Options</h1>
+
+      <dl>
+        <dt><code class="method">socialize(options)</code></dt>
+        <dd>Displays a list of social bookmark links appended to the matched container element(s). </dd>
+      </dl>
+<pre><code class="mix">$.fn.socialize.defaults = {  // default options; override as needed
+  sites: ['delicious', 'digg', 'dzone', 'reddit', 'stumbleupon'],
+  containerId: 'social-icons',
+  containerClass: 'group',
+  linkClass: 'social-icon',
+  insertion: 'appendTo',
+  events: {
+    /*
+    click: function(event) { },
+    mouseover: function(event) { }
+    */
+  }
+
+};</code></pre>
+    </div>
+    <div id="download" class="tabContent">
+      <h1>Download</h1>
+      All the files for the Socialize Plugin are available for download as a <a href="jquery.socialize.zip">zip file</a>
+
+      <h1>Support</h1>
+      <p>Support for the Socialize Plugin is available through the
+        <a class="external" href="http://groups.google.com/group/jquery-en/">jQuery Mailing List</a>.  
+        This is a very active list to which many jQuery developers and users subscribe.
+      </p>
+      <div id="footer">
+        This documentation is maintained by Karl Swedberg.  Send comments or questions to karl [at] learningjquery [dot] com.
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
